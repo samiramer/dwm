@@ -11,8 +11,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "CaskaydiaCove Nerd Font:size=10" };
-static const char dmenufont[]       = "CaskaydiaCove Nerd Font:size=10";
+static const char *fonts[]          = { "NotoMono Nerd Font Mono:size=10" };
+static const char dmenufont[]       = "NotoMono Nerd Font Mono:size=10";
 static const char col_gray1[]       = "#1d2021";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -32,14 +32,14 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                instance    title                           tags mask     isfloating   monitor */
-	{ NULL,                 NULL,       "Task Manager - Google Chrome", 0,            1,           -1 },
-	{ "Lxappearance",       NULL,       NULL,                           0,            1,           -1 },
-	{ "Blueman-manager",    NULL,       NULL,                           0,            1,           -1 },
-	{ "1password",          NULL,       NULL,                           1 << 8,       0,           -1 },
-	{ "1Password",          NULL,       NULL,                           1 << 8,       0,           -1 },
-	{ "pavucontrol",        NULL,       NULL,                           0,            1,           -1 },
-	{ "Pavucontrol",        NULL,       NULL,                           0,            1,           -1 },
+	/* class                instance    title                                   tags mask     isfloating   monitor */
+	{ NULL,                 NULL,       "Task Manager - Google Chrome",         0,            1,           -1 },
+	{ "Lxappearance",       NULL,       NULL,                                   0,            1,           -1 },
+	{ "Blueman-manager",    NULL,       NULL,                                   0,            1,           -1 },
+	{ "1password",          NULL,       "Quick Access — 1Password",   0,       1,           -1 },
+	{ "1Password",          NULL,       "Quick Access — 1Password",   0,       1,           -1 },
+	{ "pavucontrol",        NULL,       NULL,                                   0,            1,           -1 },
+	{ "Pavucontrol",        NULL,       NULL,                                   0,            1,           -1 },
 };
 
 /* layout(s) */
