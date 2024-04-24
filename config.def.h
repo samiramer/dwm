@@ -11,17 +11,18 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "NotoMono Nerd Font Mono:size=10" };
-static const char dmenufont[]       = "NotoMono Nerd Font Mono:size=10";
+static const char *fonts[]          = { "monospace:size=10" };
+static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#1f1f28"; // Gruvbox "#1d2021"; // Nightfly "#011627";
 static const char col_gray2[]       = "#444444"; // Gruvbox "#444444"; // Nightfly "#1d3b53";
 static const char col_gray3[]       = "#bbbbbb"; // Gruvbox "#bbbbbb"; // Nightfly "#a1aab8";
 static const char col_gray4[]       = "#dcd7ba"; // Gruvbox "#d4be98"; // Nightfly "#a1aab8";
 static const char col_cyan[]        = "#c0a36e"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
+static const char col_magenta[]     = "#938aa9"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray4, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray1, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray1, col_magenta,  col_magenta  },
 };
 
 /* tagging */
@@ -76,6 +77,7 @@ static const char *mutevol[] = { "volume_change", "t", NULL };
 static const char *lockcmd[] = { "loginctl", "lock-session", NULL };
 static const char *powercmd[] = { "dmenu_power", NULL };
 static const char *printguicmd[] = { "flameshot", "gui", NULL };
+static const char *pomodorocmd[] = { "dmenu_pomodoro", NULL };
 
 #include <X11/XF86keysym.h>
 #include "movestack.c"
@@ -88,6 +90,7 @@ static const Key keys[] = {
   { MODKEY|ShiftMask,             XK_x,                       spawn,          {.v = powercmd} },
 	{ MODKEY|ShiftMask,             XK_o,                       spawn,          {.v = lockcmd } },
 	{ MODKEY,                       XK_p,                       spawn,          {.v = dmenucmd } },
+	{ MODKEY|ShiftMask,             XK_p,                       spawn,          {.v = pomodorocmd } },
 	{ MODKEY,                       XK_space,                   spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,                       togglebar,      {0} },
 	{ MODKEY,                       XK_j,                       focusstack,     {.i = +1 } },
