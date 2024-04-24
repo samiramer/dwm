@@ -13,12 +13,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#1f1f28"; // Gruvbox "#1d2021"; // Nightfly "#011627";
+static const char col_gray1[]       = "#1d2021"; // Gruvbox "#1d2021"; // Nightfly "#011627";
 static const char col_gray2[]       = "#444444"; // Gruvbox "#444444"; // Nightfly "#1d3b53";
 static const char col_gray3[]       = "#bbbbbb"; // Gruvbox "#bbbbbb"; // Nightfly "#a1aab8";
-static const char col_gray4[]       = "#dcd7ba"; // Gruvbox "#d4be98"; // Nightfly "#a1aab8";
-static const char col_cyan[]        = "#c0a36e"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
-static const char col_magenta[]     = "#938aa9"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
+static const char col_gray4[]       = "#d4be98"; // Gruvbox "#d4be98"; // Nightfly "#a1aab8";
+static const char col_cyan[]        = "#d8a657"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
+static const char col_magenta[]     = "#d8a657"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray4, col_gray1, col_gray2 },
