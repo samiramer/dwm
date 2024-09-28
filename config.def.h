@@ -13,12 +13,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#1d2021"; // Gruvbox "#1d2021"; // Nightfly "#011627";
-static const char col_gray2[]       = "#444444"; // Gruvbox "#444444"; // Nightfly "#1d3b53";
-static const char col_gray3[]       = "#bbbbbb"; // Gruvbox "#bbbbbb"; // Nightfly "#a1aab8";
-static const char col_gray4[]       = "#d4be98"; // Gruvbox "#d4be98"; // Nightfly "#a1aab8";
-static const char col_cyan[]        = "#d8a657"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
-static const char col_magenta[]     = "#d8a657"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
+static const char col_gray1[]       = "#011627"; // Gruvbox - modified "#1d2021"; // Gruvbox "#1d2021"; // Nightfly "#011627";
+static const char col_gray2[]       = "#1d3b53"; // Gruvbox - modified "#444444"; // Gruvbox "#444444"; // Nightfly "#1d3b53";
+static const char col_gray3[]       = "#a1aab8"; // Gruvbox - modified "#bbbbbb"; // Gruvbox "#bbbbbb"; // Nightfly "#a1aab8";
+static const char col_gray4[]       = "#dedede"; // Gruvbox - modified "#dedede"; // Gruvbox "#d4be98"; // Nightfly "#a1aab8";
+static const char col_cyan[]        = "#ecc48d"; // Gruvbox - modified "#d8a657"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
+static const char col_magenta[]     = "#ecc48d"; // Gruvbox - modified "#d8a657"; // Gruvbox "#d8a657"; // Nightfly "#ecc48d";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray4, col_gray1, col_gray2 },
@@ -70,7 +70,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray4, "-sb", col_magenta, "-sf", col_gray1, NULL };
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *upvol[] = { "volume_change", "i", NULL };
 static const char *downvol[] = { "volume_change", "d", NULL };
 static const char *mutevol[] = { "volume_change", "t", NULL };
