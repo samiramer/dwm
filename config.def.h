@@ -11,8 +11,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "monospace:size=12" };
+static const char dmenufont[]       = "monospace:size=12";
 static const char col_gray1[]       = "#011627"; // Gruvbox - modified "#1d2021"; // Gruvbox "#1d2021"; // Nightfly "#011627";
 static const char col_gray2[]       = "#1d3b53"; // Gruvbox - modified "#444444"; // Gruvbox "#444444"; // Nightfly "#1d3b53";
 static const char col_gray3[]       = "#a1aab8"; // Gruvbox - modified "#bbbbbb"; // Gruvbox "#bbbbbb"; // Nightfly "#a1aab8";
