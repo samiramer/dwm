@@ -78,6 +78,8 @@ static const char *lockcmd[] = { "loginctl", "lock-session", NULL };
 static const char *powercmd[] = { "dmenu_power", NULL };
 static const char *printguicmd[] = { "flameshot", "gui", NULL };
 static const char *pomodorocmd[] = { "dmenu_pomodoro", NULL };
+static const char *dunstclosecmd[] = { "dunstctl", "close" };
+static const char *dunstcontextcmd[] = { "dunstctl", "context" };
 
 #include <X11/XF86keysym.h>
 #include "movestack.c"
@@ -92,6 +94,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,                       spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_p,                       spawn,          {.v = pomodorocmd } },
 	{ MODKEY,                       XK_space,                   spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_n,                       spawn,          {.v = dunstclosecmd } },
+	{ MODKEY|ShiftMask,             XK_n,                       spawn,          {.v = dunstcontextcmd } },
 	{ MODKEY,                       XK_b,                       togglebar,      {0} },
 	{ MODKEY,                       XK_j,                       focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,                       focusstack,     {.i = -1 } },
