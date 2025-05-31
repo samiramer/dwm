@@ -37,8 +37,10 @@ static const Rule rules[] = {
 	{ NULL,                 NULL,       "Task Manager - Google Chrome",         0,            1,           -1 },
 	{ "Lxappearance",       NULL,       NULL,                                   0,            1,           -1 },
 	{ "Blueman-manager",    NULL,       NULL,                                   0,            1,           -1 },
-	{ "1password",          NULL,       "Quick Access — 1Password",   0,       1,           -1 },
-	{ "1Password",          NULL,       "Quick Access — 1Password",   0,       1,           -1 },
+	{ "1password",          NULL,       "Quick Access — 1Password",             0,            1,           -1 },
+	{ "1Password",          NULL,       "Quick Access — 1Password",             0,            1,           -1 },
+	{ "1Password",          NULL,       NULL,                                   0,            1,           -1 },
+	{ "1password",          NULL,	    NULL,                                   0,            1,           -1 },
 	{ "pavucontrol",        NULL,       NULL,                                   0,            1,           -1 },
 	{ "Pavucontrol",        NULL,       NULL,                                   0,            1,           -1 },
 };
