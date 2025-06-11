@@ -72,7 +72,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray4, "-sb", col_magenta, "-sf", col_gray1, NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "alacritty", "--config-file", "/home/samer/.config/alacritty/alacritty-linux.toml", NULL };
 static const char *upvol[] = { "volume_change", "i", NULL };
 static const char *downvol[] = { "volume_change", "d", NULL };
 static const char *mutevol[] = { "volume_change", "t", NULL };
